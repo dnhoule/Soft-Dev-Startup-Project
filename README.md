@@ -1,11 +1,12 @@
 # Soft-Dev-Startup-Project
 
 Ceasar:
-*Main Web-Page
-
-
-
+* Main Web-Page
 
 
 Dylan:
-* Fresh Produce Sub Group
+* Shop Sub Group
+
+
+Liam: 
+* General Subgroups ie. Shop Page
