@@ -1,1 +1,3 @@
-* Add html code to body, copy css code, and link css code to html
+* Add html code to body
+* copy css code
+* link css code to html
