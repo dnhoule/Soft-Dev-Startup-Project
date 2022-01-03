@@ -10,4 +10,4 @@ Dylan:
 
 
 Liam: 
-* General Subgroups ie. Shop Page
+* General Subgroups i.e. Shop Page
