@@ -1,0 +1,17 @@
+
+div.hamburger_menu{
+text-align: center;
+}
+div.hamburger_menu a{
+    display: inline-block;
+    color:white;
+    padding: 14px;
+    text-decoration: none;
+}
+div.hamburger_menu a:hover {
+    background-color: #777;
+  }
+  /*
+    TODO: make image start on new line so that words don't wrap.
+    continue to finalize main page.
+    */
