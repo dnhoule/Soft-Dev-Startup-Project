@@ -1,3 +1,2 @@
-* Add html code to body
-* copy css code
-* link css code to html
+
+* For add buttons, give class name 'btn-add' and 'btn-remove' for remove buttons
