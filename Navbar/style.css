@@ -2,6 +2,7 @@
   text-align: center;
   background: lightgrey;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 3px;
 }
 .navbar ul {
   list-style-type: none;
@@ -10,7 +11,7 @@
 }
 .navbar ul li {
   width: 200px;
-  margin: 15px;
+  margin: 20px;
   padding: 15px;
   font-size: larger;
 }
@@ -19,8 +20,8 @@
   color: black;
 }
 
-.active,
-.navbar ul li:hover {
+#general,
+.active:hover {
   background-color: grey;
   border-radius: 3px;
 }
@@ -44,6 +45,7 @@
 .navbar ul li:hover .shop-dropdown ul li {
   text-align: left;
   padding: 10px;
+  font-size: large;
 }
 .shop-dropdown ul li:hover {
   background-color: white;
@@ -62,10 +64,23 @@
 .navbar ul li:hover .holiday-dropdown ul {
   display: block;
   margin-left: -40px;
+  text-align: left;
 }
 .holiday-dropdown ul li {
   font-size: large;
 }
 .holiday-dropdown ul li:hover {
   background-color: white;
+}
+.icon {
+  font-size: 35px;
+  text-align: center;
+  margin-top: -15px;
+}
+#cart-basket {
+  color: white;
+  font-size: 18px;
+}
+#cart-outline:hover {
+ 
 }
