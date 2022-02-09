@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <title>Cart Webpage</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="card">
+        <script>
+          addToCart("hotchocolate");
+        </script>
+        <h1 id="items-in-cart"></h1>
+        <script>
+          document.getElementById("items-in-cart").innerHTML =
+            calculateItemsInCart();
+        </script>
+      </div>
+    </div>
+    <div class="row">
+      <div class="cart-items">
+        <div class="items-card">
+          <h2>Items</h2>
+        </div>
+      </div>
+      <div class="price-block">
+        <div class="pricing-card">
+          <h2>Cost</h2>
+          <div class="specifics">
+            <h4 id="price-no-tax"></h4>
+            <script>
+              document.getElementById("price-no-tax").innerHTML =
+                calculateTotalNoTax();
+            </script>
+            <h4 id="tax-total"></h4>
+            <script>
+              document.getElementById("tax-total").innerHTML = calculateTax();
+            </script>
+            <h4 id="subtotal">:</h4>
+            <script>
+              document.getElementById("subtotal").innerHTML = calculateTotal();
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button-card">
+      <div class="add-to-catalog">
+        <button id="butt" onclick="addToCatalog()">
+          Add Product To Catalog
+        </button>
+      </div>
+      <div class="print-catalog">
+        <button onclick="printCatalog()">Print catalog</button>
+      </div>
+    </div>
+  </body>
+</html>
