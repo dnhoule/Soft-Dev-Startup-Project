@@ -5,14 +5,31 @@ const shoppingCart = new Array();
 
 function addToCatalog(){
     //parse any JSON previously store in PRODUCT_CATALOG
-    let existingEntries = JSON.parse(localStorage.getItem("PRODUCT_CATALOG"));
+    let existingEntries = JSON.parse(localStorage.getItem("PRODUCT_CATALOG")) || [];
     let name = prompt("Enter product name");
     let price = prompt("Enter product price");
-    let entry = {
-        "name": name,
-        "price": price
-    };
-    existingEntries.push(entry);
+    if(name != null & price != null){
+        let entry = {
+            "name": name,
+            "price": price
+        };
+        existingEntries.push(entry);
+        localStorage.setItem("PRODUCT_CATALOG", JSON.stringify(existingEntries));
+    }
+}
+
+//work on implementing this method
+function removeFromCatalog(){
+    let existingEntries = JSON.parse(localStorage.getItem('PRODUCT_CATALOG')) || [];
+    let name = prompt('Enter product name for removal: ');
+    for(let i = 0; i < existingEntries.length; i++){
+        if(existingEntries[i] === null){
+            continue;
+        }
+        else if(existingEntries[i].name === name) {
+            existingEntries.splice(i, 1);
+        }
+    }
     localStorage.setItem("PRODUCT_CATALOG", JSON.stringify(existingEntries));
 }
 
@@ -21,7 +38,7 @@ function printCatalog(){
 }
 
 function addToCart(name){
-    let existingProducts = JSON.parse(localStorage.getItem('PRODUCT_CATALOG') || []);
+    let existingProducts = JSON.parse(localStorage.getItem('PRODUCT_CATALOG'));
     for(let i = 0; i < existingProducts.length; i++) {
         if(name === existingProducts[i].name){
             shoppingCart.push(existingProducts[i]);
